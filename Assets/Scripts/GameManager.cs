@@ -124,6 +124,11 @@ public class GameManager : MonoBehaviour
 
         }
 
+        if (player == null)
+        {
+            return;
+        }
+
         currentUpgradeTime += Time.deltaTime;
         if (currentUpgradeTime > actualUpgradeTime)
         {
